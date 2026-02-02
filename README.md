@@ -7,8 +7,9 @@ I won't details this part as it is straight forward and well explained in Fedora
 
 I have installed **Fedora KDE Plasma 43**.
 
-# 2/ Install Steam:
+# 2/ Install Steam
 Source: [https://docs.fedoraproject.org/en-US/gaming/proton/]
+
 I chose the terminal steps (Go to **Application Launcher > Konsole**):
 ```
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
@@ -17,14 +18,20 @@ sudo dnf install steam -y
 ```
 
 If Steam is starting but not opening, it is most likely it is the same error as mine (steamwebhelper is crashing - you can see details running journal -f from Konsole and reopen Steam).
-In this case, just start Steam from Konsole terminal: 
+
+In this case, just start Steam from Konsole terminal:
+```
 steam
+```
 This time it should open. From there, go to **Setting > Interface and disable "Enable GPU accelerated rendering in web views (requires restart)"**.
+
 After that, your steam client interface should work and you can install your games the same way as it is on Windows.
 
 # 3/ Third Party application
 Some of the games are not from Steam, but no worries, you can still ink them back to Steam.
+
 For example, I have Red Dead Redemption 2 which is coming from Rockstart Games Launcher only providing a Windows .exe file.
+
 In this case, you need to use Wine which will provide a compatibility layer between your windows Application and your Linux Operating System.
 
 First step it to install Wine and Wineglass (providing a GUI) from the Software Centre.
