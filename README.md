@@ -26,7 +26,7 @@ steam
 This time it should open. 
 
 From there, go to **Setting > Interface and disable "Enable GPU accelerated rendering in web views (requires restart)"**.
-
+(Steam-Disable.png)
 After that, your steam client interface should work and you can install your games the same way as it is on Windows.
 
 # 3/ Third Party application
